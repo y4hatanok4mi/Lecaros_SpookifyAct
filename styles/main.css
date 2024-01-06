@@ -1,0 +1,497 @@
+/* Fonts 
+font-family: 'Lora', serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+:root {
+  --spacer: 3rem;
+  --box-shadow: 0.3rem 0.3rem 1.5rem hsla(0, 0%, 0%, 0.15);
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilities */
+ul[class],
+ol[class] {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flow-content > * + * {
+  margin-top: var(--flow-spacer, var(--spacer));
+}
+/* Start Here */
+
+body {
+  background-image: url(../images/bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  color: #FFFFFF;
+  background-color: #050505;
+  font-size: 1.8rem;
+  font-family: 'Lora';
+}
+
+ h2, h3{
+  color: #3D2892;
+  font-size: 3.2rem;
+  font-family: 'Poppins';
+}
+
+/*header*/
+nav {
+  font-family: 'Poppins';
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+  font-size: 3.2rem;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  gap: 5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  font-weight: 700;
+  color: #F55D3A;
+}
+nav .fa {
+  display: none;
+}
+
+.highlight {
+  color: #F55D3A;
+}
+
+/*intro*/
+.hero {
+  margin: 5rem 10rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.hero figure img {
+  width: 30rem;
+  height: 30rem;
+}
+
+.intro-quote h1 {
+  color: #F55D3A;
+  font-size: 6.4rem;
+  text-transform: uppercase;
+}
+
+.intro-quote h2 {
+  margin-bottom: 5rem;
+  font-family: 'Lora';
+  color: #FFFFFF;
+}
+
+.intro-quote a {
+  text-decoration: none;
+  background-color: #3D2892;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+}
+
+/*story page*/
+.stories h2 {
+  text-align: center;
+  margin: 10rem 0;
+}
+
+.paramdam {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.paramdam-bg {
+  position: relative;
+  width: 20rem;
+  height: 29rem;
+  top: 3rem;
+  left: -10rem;
+  border-radius: 0.3rem;
+  background-color: #8A1313;
+}
+
+.bg-shape-paramdam {
+  position: absolute;
+  left: .7rem;
+  top: .7rem;
+}
+
+.info {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  gap: 20px;
+}
+
+.info a {
+  text-decoration: none;
+  color: #F55D3A;
+  font-weight: 700;
+  font-family: 'Poppins';
+}
+
+.senyales {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 20rem;
+  margin: 10rem 0;
+  margin-top: 20rem;
+}
+.senyales-bg{
+  position: relative;
+  width: 20rem;
+  height: 29rem;
+  top: 3rem;
+  left: 9rem;
+  border-radius: 0.3rem;
+  background-color: #8A1313;
+}
+
+.bg-shape-senyales {
+  position: absolute;
+  left: -8.5rem;
+  top: .7rem;
+}
+
+/*authors page*/
+.authors {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.authors h2 {
+  margin: 10rem 0;
+}
+
+.authors h3 {
+  font-size: 2.8rem;
+  color: #F55D3A;
+}
+.author {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20rem;
+}
+
+.author figure img {
+  margin: 1rem 0;
+}
+
+/*footer*/
+footer {
+  font-family: 'Poppins';
+}
+.footer {
+  justify-content: center;
+}
+
+.input {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  top: 40rem;
+  gap: 2rem;
+  margin: 0 10rem;
+}
+
+.input h1 {
+  font-size: 6.4rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+.spook {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+}
+.spook-mes {
+  border: none;
+  width: 30rem;
+  height: 3rem;
+  border-radius: .5rem;
+}
+
+.spook-button {
+  border: none;
+  padding: 1rem 2rem;
+  color: #FFFFFF;
+  border-radius: .5rem;
+  background-color: #3D2892;
+  font-weight: 700;
+}
+
+.copyright {
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.vector svg{
+  width: 100%;
+  display: block;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 768px){
+  nav {
+    margin: 3rem 5rem;
+  }
+
+  .nav ul {
+		display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 2rem;
+    padding: 2rem;
+	}
+
+	.nav{
+		position: absolute;
+		background: #F55D3A;
+		height: 100%;
+		width: 20rem;
+		top: 0;
+		text-align: left;
+		z-index: 3;
+		transition: 1s;
+	}
+
+  .nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+	nav .fa{
+		display: block;
+		color: #fff;
+		font-size: 3.2rem;
+		cursor: pointer;
+	}
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 5rem 5rem;
+  }
+
+  .intro-quote h1 {
+    font-size: 3.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero figure img {
+    height: 20rem;
+    width: 20rem;
+  }
+  
+  .stories h2{
+    align-items: center;
+    font-size: 3.2rem;
+  }
+  .paramdam, .senyales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .senyales {
+    margin-top: 10rem;
+  }
+  .paramdam-bg {
+    left: -5rem;
+  }
+
+  .senyales-bg {
+    left: 3.5rem;
+  }
+  .info{
+    width: 300px;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .authors h2 {
+    align-items: center;
+    font-size: 3.2rem
+  }
+  .author {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .author h3 {
+    font-size: 1.8rem;
+  }
+
+  .footer{
+    position: relative;
+  }
+
+  .input {
+    display: flex;
+    flex-direction: row;
+    gap: .8rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    top: 22rem;
+  }
+  .input h1 {
+    font-size: 2.6rem;
+  }
+  
+  .copyright {
+    font-size: 1.3rem;
+  }
+
+  .footer svg {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  
+  nav {
+    margin: 3rem 5rem;
+  }
+
+  .nav ul {
+		display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    gap: 2rem;
+    padding: 2rem;
+	}
+
+	.nav{
+		position: absolute;
+		background: #F55D3A;
+		height: 100%;
+		width: 20rem;
+		top: 0;
+		text-align: left;
+		z-index: 3;
+		transition: 1s;
+	}
+
+  .nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+	nav .fa{
+		display: block;
+		color: #fff;
+		font-size: 3.2rem;
+		cursor: pointer;
+	}
+
+  .author {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .author h3 {
+    font-size: 1.8rem;
+  }
+  .author p {
+    font-size: 1.5rem;
+  }
+  .input {
+    display: flex;
+    flex-direction: row;
+    top: 13rem;
+    gap: .5rem;
+    margin: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .input h1 {
+    font-size: 1.8rem;
+  }
+  .spook {
+    gap: 2rem;
+  }
+  .spook-mes {
+    height: 2rem;
+    width: 23rem;
+  }
+
+  .spook-button {
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .copyright {
+    font-size: 1rem;
+    top: 396rem;
+  }
+
+  .footer svg {
+    width: 100%;
+    display: block;
+  }
+}
